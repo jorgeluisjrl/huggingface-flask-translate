@@ -111,6 +111,7 @@ source venv/bin/activate  # En Windows: venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
+![Captura de pantalla](images/requirements.png)
 
 ## Ejecución del servicio
 ```bash
