@@ -127,34 +127,25 @@ El servicio estará disponible en `http://localhost:5555`
 curl -X POST "http://127.0.0.1:5555/translate" -H "Content-Type: application/json" -d "{\"text\": \"Hello, how are you?\"}"
 ```
 ```bash
-curl -X POST "http://127.0.0.1:5555/translate" -H "Content-Type: application/json" -d "{\"text\": \"Hello, how are you?\"}"
+curl -X POST "http://127.0.0.1:5555/translate" -H "Content-Type: application/json" -d "{\"text\": \"The future belongs to those who believe in the beauty of their dreams.\"}"
 ```
 ```bash
-curl -X POST "http://127.0.0.1:5555/translate" -H "Content-Type: application/json" -d "{\"text\": \" Success is not the key to happiness. Happiness is the key to success.\"}"
+curl -X POST "http://127.0.0.1:5555/translate" -H "Content-Type: application/json" -d "{\"text\": \"Success is not the key to happiness. Happiness is the key to success.\"}"
 ```
 ![Captura de pantalla](images/curl.png)
 
-### **2. Prueba con Postman**
-- Configura una petición `POST` a `http://localhost:5555/translate`
-- Envía un JSON con la clave `text`
-- Observa la respuesta con el texto traducido
-
-### **3. Uso en Navegador**
-Si la aplicación incluye una interfaz web, accede a `http://localhost:5555/` y realiza pruebas interactivas.
+### **2. Uso en Navegador**
+Ya que la aplicación incluye una interfaz web, es necesario acceder a `http://localhost:5555/` en cualquier navegador y realiza pruebas interactivas.
 
 ## Capturas de Pantalla
 Incluir capturas de:
 1. **Ejecución del servidor Flask** en la terminal.
-2. **Prueba exitosa en Postman o `curl`**.
-3. **Interfaz web en funcionamiento** (si aplica).
+2. **Prueba exitosa en `curl`**.
+3. **Interfaz web en funcionamiento**.
+   
+   **Request:** Hello, how are you?
+   ![Captura de pantalla](images/traduccion_web_1.png)
 
-## Posibles Mejoras
-- **Soporte para múltiples modelos** de traducción.
-- **Implementación de autenticación** para mayor seguridad.
-- **Despliegue en la nube** para acceso global.
 
-## Autores
-- **Jorge**
-
-## Licencia
-Este proyecto se distribuye bajo la licencia MIT.
+## Autor
+- **Jorge Luis Vega**
