@@ -118,21 +118,13 @@ pip install -r requirements.txt
 python app.py
 ```
 El servicio estará disponible en `http://localhost:5555`
-![Captura de pantalla](images/app.png)
 
 ## Uso del servicio
 
 ### **1. Prueba con `curl`** (🖥️ en Windows CMD)
 ```bash
-curl -X POST "http://127.0.0.1:5555/translate" -H "Content-Type: application/json" -d "{\"text\": \"Hello, how are you?\"}"
+curl -X POST "http://localhost:5555/translate" -H "Content-Type: application/json" -d '{"text": "Hello, how are you?"}'
 ```
-```bash
-curl -X POST "http://127.0.0.1:5555/translate" -H "Content-Type: application/json" -d "{\"text\": \"The future belongs to those who believe in the beauty of their dreams.\"}"
-```
-```bash
-curl -X POST "http://127.0.0.1:5555/translate" -H "Content-Type: application/json" -d "{\"text\": \"Success is not the key to happiness. Happiness is the key to success.\"}"
-```
-![Captura de pantalla](images/curl.png)
 
 ### **2. Uso en Navegador**
 Ya que la aplicación incluye una interfaz web, es necesario acceder a `http://localhost:5555/` en cualquier navegador y realiza pruebas interactivas.
@@ -140,12 +132,41 @@ Ya que la aplicación incluye una interfaz web, es necesario acceder a `http://l
 ## Capturas de Pantalla
 Incluir capturas de:
 1. **Ejecución del servidor Flask** en la terminal.
+   
+   ![Captura de pantalla](images/app.png)
+   
 2. **Prueba exitosa en `curl`**.
+
+   **Request:** Hello, how are you?
+   ```bash
+   curl -X POST "http://127.0.0.1:5555/translate" -H "Content-Type: application/json" -d "{\"text\": \"Hello, how are you?\"}"
+   ```
+   **Request:** The future belongs to those who believe in the beauty of their dreams.
+   ```bash
+   curl -X POST "http://127.0.0.1:5555/translate" -H "Content-Type: application/json" -d "{\"text\": \"The future belongs to those who believe in the beauty of their dreams.\"}"
+   ```
+   **Request:** Success is not the key to happiness. Happiness is the key to success.\
+   ```bash
+   curl -X POST "http://127.0.0.1:5555/translate" -H "Content-Type: application/json" -d "{\"text\": \"Success is not the key to happiness. Happiness is the key to success.\"}"
+   ```
+   ![Captura de pantalla](images/curl.png)
+ 
 3. **Interfaz web en funcionamiento**.
    
    **Request:** Hello, how are you?
+   
    ![Captura de pantalla](images/traduccion_web_1.png)
+   
+   **Request:** The future belongs to those who believe in the beauty of their dreams.
+   
+   ![Captura de pantalla](images/traduccion_web_2.png)
+   
+   **Request:** Success is not the key to happiness. Happiness is the key to success.
+   
+   ![Captura de pantalla](images/traduccion_web_3.png)
 
-
+## Conclusiones
+- **Jorge Luis Vega**
+- 
 ## Autor
 - **Jorge Luis Vega**
