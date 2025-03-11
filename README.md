@@ -1,14 +1,14 @@
 # Servicio Web de Traducción con Flask y Hugging Face
 
-Este proyecto implementa un servicio web de traducción de texto de inglés a español utilizando Flask y un modelo preentrenado de Hugging Face. 
+Este taller implementa un servicio web de traducción de texto de inglés a español utilizando Flask y un modelo preentrenado de Hugging Face. 
 Además, incluye una interfaz web sencilla (HTML + JavaScript) que permite a los usuarios ingresar texto y recibir la traducción directamente desde su navegador.
 
 ## Tecnologías utilizadas
 - **Flask**: Framework para el servicio web.
 - **Hugging Face Transformers**: Para cargar el modelo de traducción.
 - **Python 3.x**: Lenguaje de programación.
-- **Postman / curl**: Para probar la API.
-- **GitHub**: Para el control de versiones.
+- **curl**: Para probar la API.
+- **GitHub**
 
 ## Modelo Utilizado
 Este servicio usa el modelo **Helsinki-NLP/opus-mt-en-es**, un modelo preentrenado de Hugging Face para la traducción de inglés a español.
@@ -19,6 +19,7 @@ huggingface-flask-translate/
 │-- app.py  # Archivo principal con la API y la interfaz web
 │-- requirements.txt  # Dependencias necesarias
 │-- README.md  # Documentación del proyecto
+│-- iamges  # Capturas de pantalla de los resultados
 ```
 
 ## Código Principal
@@ -130,7 +131,7 @@ curl -X POST "http://localhost:5555/translate" -H "Content-Type: application/jso
 Ya que la aplicación incluye una interfaz web, es necesario acceder a `http://localhost:5555/` en cualquier navegador y realiza pruebas interactivas.
 
 ## Capturas de Pantalla
-Incluir capturas de:
+
 1. **Ejecución del servidor Flask** en la terminal.
    
    ![Captura de pantalla](images/app.png)
@@ -166,7 +167,7 @@ Incluir capturas de:
    ![Captura de pantalla](images/traduccion_web_3.png)
 
 ## Conclusiones
-- **Jorge Luis Vega**
-- 
+Para mejorar el servicio, sería ideal ampliarlo a más idiomas, lo que permitiría una mayor accesibilidad para usuarios de diferentes partes del mundo. Además, se podría crear una interfaz gráfica más amigable e intuitiva para facilitar la interacción del usuario con el sistema. En cuanto al rendimiento, optimizar el modelo para ofrecer traducciones más rápidas sería importante, especialmente al manejar textos largos o múltiples solicitudes. Finalmente, para garantizar la seguridad y proteger los datos de los usuarios, sería necesario implementar autenticación y medidas de seguridad en la API, asegurando que solo los usuarios autorizados puedan acceder al servicio.
+
 ## Autor
 - **Jorge Luis Vega**
