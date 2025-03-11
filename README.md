@@ -118,6 +118,7 @@ pip install -r requirements.txt
 python app.py
 ```
 El servicio estará disponible en `http://localhost:5555`
+![Captura de pantalla](images/app.png)
 
 ## Uso del servicio
 
