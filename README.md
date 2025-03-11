@@ -122,10 +122,17 @@ El servicio estará disponible en `http://localhost:5555`
 
 ## Uso del servicio
 
-### **1. Prueba con `curl`**
+### **1. Prueba con `curl`** (🖥️ en Windows CMD)
 ```bash
-curl -X POST "http://localhost:5555/translate" -H "Content-Type: application/json" -d '{"text": "Hello, how are you?"}'
+curl -X POST "http://127.0.0.1:5555/translate" -H "Content-Type: application/json" -d "{\"text\": \"Hello, how are you?\"}"
 ```
+```bash
+curl -X POST "http://127.0.0.1:5555/translate" -H "Content-Type: application/json" -d "{\"text\": \"Hello, how are you?\"}"
+```
+```bash
+curl -X POST "http://127.0.0.1:5555/translate" -H "Content-Type: application/json" -d "{\"text\": \" Success is not the key to happiness. Happiness is the key to success.\"}"
+```
+![Captura de pantalla](images/curl.png)
 
 ### **2. Prueba con Postman**
 - Configura una petición `POST` a `http://localhost:5555/translate`
